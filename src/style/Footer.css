@@ -1,0 +1,19 @@
+
+.footer{
+    
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer.footer-clear{
+    color: var(--clear-txt-color);
+    background-color: var(--clear-bg-color);
+}
+
+.footer.footer-dark{
+    color: var(--dark-txt-color);
+    background-color: var(--dark-bg-color);
+}
