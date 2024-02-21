@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Link } from '@mui/material';
 import  '../style/Footer.css';
 
-export default function Footer() {
+export const Footer= () =>{
   return (
     // <footer style={{ color:"white", backgroundColor: '#1976d2', padding: '20px', position: 'fixed', left: 0, bottom: 0, width: '100%' }}>
     <div className='footer footer-clear'>

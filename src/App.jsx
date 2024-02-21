@@ -12,7 +12,9 @@ export default function App() {
 
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/index" element={<Home />} />
+                <Route path="/inicio" element={<Home />} />
+                {/* <Route path="/medios" element={<Home />} /> */}
+                {/* <Route path="/añadir" element={<Home />} /> */}
 
                 <Route path="*" element={<NotFound />} /> {/* Ruta para "no encontrado" */}
             </Routes>
