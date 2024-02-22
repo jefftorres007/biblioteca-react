@@ -6,10 +6,9 @@ export const MediaList = ({mediaList}) => {
 
 
     return (
-    <Grid container spacing={3}>
-    {mediaList.map(media => (
-        <MediaItem key={media.id} media={media} />
-    ))}
-    </Grid>
-    )
-}
+        <Grid container spacing={3}>
+            {mediaList.map(media => (
+                <MediaItem key={media.id} media={media} />
+            ))}
+        </Grid>
+    )}

@@ -6,9 +6,11 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    background-color: #1976d2;
+    color: white;
 }
 
-.footer.footer-clear{
+/* .footer.footer-clear{
     color: var(--clear-txt-color);
     background-color: var(--clear-bg-color);
 }
@@ -16,4 +18,4 @@
 .footer.footer-dark{
     color: var(--dark-txt-color);
     background-color: var(--dark-bg-color);
-}
+} */

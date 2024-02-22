@@ -1,0 +1,9 @@
+.cnt-section{
+    padding: 5em;
+    margin-bottom: 2em;
+    background-color: aqua;
+}
+
+.cnt-section-clear{
+    background-color: var(--clear-bg-color);
+}

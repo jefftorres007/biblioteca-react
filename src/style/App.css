@@ -1,9 +1,10 @@
 :root {
-    --clear-bg-color: #1976d2;
-    --clear-txt-color: #ffff;
+    --clear-bg-color: #f1f1f1;
+    
+    /* --clear-txt-color: #ffff; */
 
-    --dark-bg-color: #000000;
-    --dark-txt-color: #ffff;
+    --dark-bg-color: #1d1d1d;
+    /* --dark-txt-color: #ffff; */
   }
 
 

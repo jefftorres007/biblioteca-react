@@ -18,6 +18,7 @@ export const MediaItem = ({media}) => {
         <Typography gutterBottom variant="h5" component="div">
         {media.title}
         </Typography>
+        <Typography variant="h6" color='success' >{media.typeId}</Typography>
         <Typography variant="p" >
           Añadido el {moment(media.creationDate).format('DD/MM/YYYY')}
         </Typography>

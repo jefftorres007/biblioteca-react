@@ -99,10 +99,12 @@ export const Header = () => {
                     </Box>
 
                     <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center' }}>
-                        <Typography variant="body2" sx={{ mr: 1 }}>Tema {darkMode ? 'Oscuro' : 'Claro'}</Typography>
+                        {/* <Typography variant="body2" sx={{ mr: 1 }}>Tema {darkMode ? 'Oscuro' : 'Claro'}</Typography> */}
+                        <Typography variant="body2" sx={{ mr: 1 }}>Tema oscuro</Typography>
                         <Switch
                             checked={darkMode}
                             onChange={handleThemeChange}
+                            color="warning"
                         />
                     </Box>
                     <Box sx={{ flexGrow: 0 }}>
