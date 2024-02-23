@@ -1,14 +1,20 @@
 :root {
-    --clear-bg-color: #f1f1f1;
-    
-    /* --clear-txt-color: #ffff; */
+    --clear-bg-color: #e7e7e7;  
 
-    --dark-bg-color: #1d1d1d;
-    /* --dark-txt-color: #ffff; */
+    --dark-bg-color: #6f7075;
   }
 
 
-  html, body{
-    margin: 0;
-    background-color: #f1f1f1;
-  }
+
+html, body, .app-container {
+  height: 100%;
+  margin: 0;
+  background-color: var(--clear-bg-color);
+}
+
+#root {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

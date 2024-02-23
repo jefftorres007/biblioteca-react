@@ -1,8 +1,0 @@
-página 404
-login
-sustituye estilo en linea por clases y cada componente con su fichero css
-tema claro/oscuro
-
-lista de medios
-vista de medios
-edit/new medio

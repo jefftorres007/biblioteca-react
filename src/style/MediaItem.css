@@ -5,6 +5,14 @@
     max-height: 150px;
 }
 
+
+.cnt-card-2-clear{
+    background-color: var(--clear-bg-color) !important;
+}
+
+.cnt-card-2-dark{
+    background-color: var(--dark-bg-color) !important ;
+}
 .cnt-card-1{
     padding: 2em 2em 1em 2em;
 }

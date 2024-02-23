@@ -1,36 +1,26 @@
 import React, { useState } from 'react';
-import { AppBar, Box, Button, IconButton, Toolbar, Typography, Switch, Container, Menu, MenuItem, Tooltip, Avatar } from '@mui/material';
+import { AppBar, Box, IconButton, Toolbar, Typography, Switch, Container, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import { Link } from 'react-router-dom';
+import { useDarkMode } from '../context/DarkModeContext';
 
-const pages = ['Inicio', 'Añadir'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Inicio', 'Nuevo'];
 
 export const Header = () => {
     const [openNavMenu, setOpenNavMenu] = useState(null);
-    const [openUserMenu, setOpenUserMenu] = useState(null);
-    const [darkMode, setDarkMode] = useState(false);
+    const { darkMode, toggleDarkMode } = useDarkMode();
 
     const handleOpenNavMenu = (event) => {
         setOpenNavMenu(event.currentTarget);
     };
 
-    const handleOpenUserMenu = (event) => {
-        setOpenUserMenu(event.currentTarget);
-    };
-
     const handleCloseNavMenu = () => {
-        // debugger;
         setOpenNavMenu(null);
     };
 
-    const handleCloseUserMenu = () => {
-        setOpenUserMenu(null);
-    };
-
     const handleThemeChange = () => {
-        setDarkMode(!darkMode);
+        toggleDarkMode(!darkMode);
     };
 
     return (
@@ -99,7 +89,6 @@ export const Header = () => {
                     </Box>
 
                     <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center' }}>
-                        {/* <Typography variant="body2" sx={{ mr: 1 }}>Tema {darkMode ? 'Oscuro' : 'Claro'}</Typography> */}
                         <Typography variant="body2" sx={{ mr: 1 }}>Tema oscuro</Typography>
                         <Switch
                             checked={darkMode}
@@ -107,35 +96,7 @@ export const Header = () => {
                             color="warning"
                         />
                     </Box>
-                    <Box sx={{ flexGrow: 0 }}>
-                        <Tooltip title="Open settings">
-                            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                            </IconButton>
-                        </Tooltip>
-                        <Menu
-                            sx={{ mt: '45px' }}
-                            id="menu-appbar"
-                            anchorEl={openUserMenu}
-                            anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            open={Boolean(openUserMenu)}
-                            onClose={handleCloseUserMenu}
-                        >
-                            {settings.map((setting) => (
-                                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography textAlign="center">{setting}</Typography>
-                                </MenuItem>
-                            ))}
-                        </Menu>
-                    </Box>
+
                 </Toolbar>
             </Container>
         </AppBar>

@@ -10,21 +10,26 @@ export default function NotFound() {
 
 
         <>
-            <Header /> 
-
-            <Section dataStyle={{marginTop:`10em`,marginBottom:'10em'}}>
-
-                <div className="cnt-404" >
-                    <img src={fondo}></img>
-                    <Typography gutterBottom variant="h5" component="div">
-                        Página no encontrada.
-                    </Typography>              
-                </div>
-
-            </Section>
 
 
-            <Footer />
+            
+                <Header /> 
+
+                <Section>
+
+                    <div className="cnt-404" >
+                        <img src={fondo}></img>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Página no encontrada.
+                        </Typography>              
+                    </div>
+
+                </Section>
+
+
+                <Footer />
+
+
         </>
     );
 }

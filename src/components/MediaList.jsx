@@ -1,4 +1,4 @@
-import { Typography, Grid, Card, CardMedia, CardContent } from '@mui/material';
+import { Grid } from '@mui/material';
 import React from 'react';
 import { MediaItem } from './MediaItem';
 
